@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>User Page</title>
+
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+
+    <script type="text/javascript" th:src="@{/client.js}"></script>
+</head>
+<body>
+<h3 th:text="${user.name}"></h3>
+<h4 th:text="${user.userName}"></h4>
+<h6 th:text="${user.dateCreated}"></h6>
+
+<button onclick="goHome()">Go Home</button>
+
+</body>
+</html>

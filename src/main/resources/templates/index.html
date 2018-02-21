@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring Starter</title>
+
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+
+    <script type="text/javascript" th:src="@{/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/client.js}"></script>
+</head>
+<body>
+<button onclick="gotoPerson()">Person Page</button>
+<button onclick="gotoEverybody()">Go to Everybody</button>
+</body>
+<form>
+    <input type="text" id="personSearch" placeholder="Enter a Name"/>
+</form>
+</html>
